@@ -16,7 +16,7 @@ jobs:
       - name: 2. Login to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ bhaskarprajapati }}
+          username: bhaskarprajapati
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: 3. Build and Push the Lunchbox!
