@@ -1,0 +1,5 @@
+# Grab the pre-built NGINX web server (the 'alpine' version is extremely small and fast)
+FROM nginx:alpine
+
+# Copy our index.html file into the specific folder where NGINX looks for websites
+COPY index.html /usr/share/nginx/html/index.html
